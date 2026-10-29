@@ -77,11 +77,10 @@ header {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 24px 95px 28px 95px;
-    margin: 0px;
-    position: -webkit-sticky; /* For Safari */
-    position: sticky; 
+    position: sticky;
     top: 0;
     z-index: 999;
+    margin: 0 auto;
 }
 
 .navbar ul{
