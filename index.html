@@ -1,12 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Berendsen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
 </head>
+
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my first GitHub pages site!</p>
+<!--Navbar-->    
+        <header class="header">
+            <nav class="navbar">
+                <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+                <div id="menu"  class="menu active">
+                    <ul>
+                        <li><a href="#welcome">Home</a></li>
+                        <li><a href="#case-studies">How I Work</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#recent-work">Recent Projects</a></li>
+                        <li><a href="#contact">Get In Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="icons-right">
+                    <a href="https://www.linkedin.com/in/willberendsen/" target="_blank">
+                        <img src="icons8-linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/willbear24/" target="_blank">
+                        <img src="icons8-github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.instagram.com/willberendsenart/" target="_blank">
+                        <img src="icons8-instagram.svg" alt="Insta">
+                    </a>
+                </div>
+            </nav>
+<!--Cover Page-->
+            <div class="welcome" id="welcome">
+                <div class="main-content">
+                    <div class="welcome-message">
+                        <h1>Will Berendsen</h1>
+                        <p>My name is Will Berendsen. I am an aspiring web developer with a background in education and the arts. I strive to create beautiful and functional products for my clients through collaboration and hard work.</p>
+                        <a href="#contact">Let's Get Started <img src="RightArrow.svg" alt="arrow"></a>
+                    </div>
+                    <div class="picture">
+                        <img src="IMG_0062.jpeg" alt="Me">
+                    </div>
+                </div>
+
+
+                <div class="partner-brands">
+                    <h3>Worked with</h3>
+                    <div class="brand-boxes">
+                        <div class="box">
+                            <img src="clickup logo 1.svg" alt="ClickUp"/>
+                        </div>
+                        <div class="box">
+                            <img src="dropbox_blue 1.svg" alt="Dropbox"/>
+                        </div>
+                        <div class="box">
+                            <img src="Group.svg" alt="Paycheck"/>
+                        </div>
+                        <div class="box">
+                            <img src="Elastic logo 1.svg" alt="Elastic"/>
+                        </div>
+                        <div class="box">
+                            <img src="Group-2.svg" alt="Stripe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--JavaScript for hmbrgr menu-->
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("menu");
+                    menu.classList.toggle("active");
+                }
+             </script>
+
+        </header>
+    
+
+    <main class="content">
+
+   <!--Case Studies/How I Work-->  
+
+        <div class="case-studies" id="case-studies">
+            <div class="cs-container">
+                <section class="cs-about">
+                    <h2>How I Work</h2>
+                    <p>What sets me apart is the way I fuse artistry with engineering precision, pairing elegant design with an obsession for detail. I build with the customer at the center, creating experiences that feel seamless, purposeful, and human.</p>
+                </section>
+
+                <section class="content-box">
+                    <div class="cs" id="cs1">
+                        <h4>Design</h4>
+                        <h3>Artistry and Design</h3>
+                        <p>My passion for art and design began early in life and has shaped the way I see and build in the world. That lifelong curiosity continues to influence how I create thoughtful, meaningful experiences today. </p>
+                        <button id="btn1">
+                            <p>View Case Study</p>
+                            <img src="RightArrow.svg" alt="arrow">
+                        </button>
+                    </div>
+                    <img src="img-1.png" class="csimg1" alt="desk">
+                </section>
+
+                <section class="content-box" id="content-box2">
+                    <img src="https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/styles/4_3_1500w/public/2024/05/2024-05-23-ce-blueprint-reading-hero.jpg?h=19ad3fdd&itok=yztjHS_H" class="csimg2" alt="swatches">
+                    <div class="cs" id="cs2">
+                        <h4>Detail</h4>
+                        <h3>Attention to Detail</h3>
+                        <p>I naturally notice the nuances others might overlook, fascinated by how subtle refinements can elevate an experience. Today, that instinct guides my software engineering work, where details make technology feel seamless.</p>
+                        <button id="btn2">
+                            <p>View Case Study <img src="RightArrow.svg" alt="arrow"> </p>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="content-box">
+                    <div class="cs" id="cs3">
+                        <h4>Success</h4>
+                        <h3>Client Focused</h3>
+                        <p>My experience in customer service taught me to lead with empathy and to measure success by the client’s experience. That perspective now guides my work in software engineering, helping me create technology that feels intuitive and supportive.</p>
+                        <button id="btn3">
+                            <p>View Case Study <img src="RightArrow.svg" alt="arrow"> </p>
+                        </button>
+                    </div>
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/0*TSUJjad2xZFDtePt" class="csimg3" alt="desk">
+                </section>
+            </div>
+        </div>
+
+<!--Testimonials-->
+
+        <div class="testimonials" id="testimonials">
+            <div class="testimonials-container">
+                <section class="testimonials-about">
+                    <h2>Testimonials</h2>
+                    <p>My clients have a lot to say about the success we have had together. I strive to exceed their expectations and find creative solutions for their needs. Here's what they have so say!</p>
+                </section>
+
+                <section class="testimonial-cards">
+                    <div class="card">
+                        <h2>“</h2>
+                        <p>Working with Will was effortless — he translates messy requirements into clean, intuitive design. He made our product better in ways we hadn’t even considered. </p>
+                        <div class="client-id">
+                            <img src="client photo1.png" class="client1img" alt="client 1">
+                            <h3>Jane Doe</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2>“</h2>
+                        <p>Will combines creativity with real engineering rigor. The result is design that not only looks beautiful but works flawlessly. </p>
+                        <div class="client-id">
+                            <img src="client photo2.png" class="client2img" alt="client 2">
+                            <h3>John Smith</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2>“</h2>
+                        <p>If you want someone who delivers high-quality work on time and elevates the whole team, hire Will. He’s the designer you hope to find. </p>
+                        <div class="client-id">
+                            <img src="client photo3.png" class="client3img" alt="client 3">
+                            <h3>Sarah Brown</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2>“</h2>
+                        <p>Will has an exceptional eye for detail and the technical skill to bring bold ideas to life. Every project feels thoughtful, polished, and a step above. </p>
+                        <div class="client-id">
+                            <img src="client photo4.png" class="client4img" alt="client 4">
+                            <h3>Chloe Yang</h3>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+<!--Recent Work-->
+
+        <div class="Recent-Work" id="recent-work">
+            <div class="rw-container">
+                <section class="rw-about">
+                    <h2>Recent Projects</h2>
+                    <p>I believe great software should be as beautiful as it is functional. This collection of recent work highlights my commitment to pixel-perfect design and building tailored solutions that put the client’s needs first.</p>
+                </section>
+
+                <section class="rw-cards">
+                    <div class="rw-card">
+                        <img src="GrandWebsiteSS.png" alt="GrandWebsite">
+                        <h3>Grand Opera House</h3>
+                        <p>A functional and aesthetically pleasing webpage for a fictional event center, made as part of a course for Coding Temple.</p>
+                        <button class="lm-button">
+                            Learn More
+                            <img src="RightArrow.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="rw-card">
+                        <img src="Screenshot 2026-02-11 at 12.07.48 PM.png" alt="PortfolioWebsite">
+                        <h3>Practice Portfolio</h3>
+                        <p>My first attempt at a developer portfolio webpage, showcasing learned skills in HTML and CSS.</p>
+                        <button class="lm-button">
+                            Learn More
+                            <img src="RightArrow.svg" alt="">
+                        </button>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+<!--Contact Page-->
+
+        <div class="contact" id="contact">
+            <div class="contact-container">
+                <section class="contact-about">
+                    <h2>Get In Touch</h2>
+                    <p>Do you like what you see? Let's connect and start to bring your dreams into reality!</p>
+                </section>
+
+                <div class="form-container">
+                    <form>
+                        <label for="e-mail">E-Mail</label>
+                        <input type="e-mail" id="e-mail" name="e-mail" placeholder="E-Mail" required>
+                        
+                        <label for="Mobile">Mobile</label>
+                        <input type="tel" id="tel" name="tel" placeholder="Phone #" required>
+
+                        <label for="textarea">Message</label>
+                        <textarea name="textarea" id="textarea" placeholder="Your message" rows="10" maxlength="2000" minlength="10" required></textarea>
+
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!--Footer-->  
+
+    <footer> 
+        <p>&copy; Will Berendsen</p>
+    </footer>
+
+<!--Back to top button-->    
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="script.js"></script>
 </body>
 </html>
