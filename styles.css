@@ -1,0 +1,1019 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&family=Playwrite+NZ+Basic:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&family=Playwrite+NZ+Basic:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "IBM Plex Mono";
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Extra Elements and Transition Properties*/
+
+#myBtn {
+    font-family: "IBM Plex Mono";
+    font-weight: 600;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: #408e00ab;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+#myBtn:hover{
+    background-color: #62BA1B;
+}
+
+button {
+    transition-property: opacity;
+    transition-duration: .25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+
+/*cover page styles*/
+
+    /*navbar styles*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color:#1B1B1B;
+    width: 87vw;
+    height: 70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 24px 95px 28px 95px;
+    margin: 0px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5.5vw;
+    flex-wrap: wrap;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #9C9C9C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    vertical-align: bottom;
+}
+
+.navbar a:hover{
+    color: #cfcfcf;
+}
+
+.icons-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 8px;
+}
+
+.icons-right img {
+    height: 20px;
+    opacity: .3;
+}
+
+.icons-right img:hover {
+    opacity: .7;
+}
+
+    /*Cover main content styles*/
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 80px 180px 57px 180px;
+    gap: 32px;
+}
+
+.welcome-message {
+    width: 538px;
+}
+
+.welcome-message h1 {
+    font-family: "Raleway";
+    font-size: 44px;
+    color: white;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 25px 0px;
+}
+
+.welcome-message p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9C9C9C;
+    line-height: 24px;
+    letter-spacing: 1%;
+    width: 500px;
+}
+
+.welcome-message button{
+    width: 307.89px;
+    height: 63px;
+    text-align: center;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: "IBM Plex Mono";
+    background-color: #3F8E00;
+    border: solid 1px color #62BA1B;
+    border-radius: 4px;
+    box-shadow: 0px 0 30px 0 #3F8E0080;
+}
+
+.welcome-message button a{
+    text-decoration: none;
+}
+
+.welcome-message button p{
+    color: white;
+    font-weight: 700px;
+    font-style: bold;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.picture img{
+    width: 350px;
+    height: 350px;
+    border-radius: 1000px;
+}
+
+    /*partner brand icons*/
+
+.partner-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partner-brands h3{
+    color: white;
+    font-size: 14px;
+    font-style: "regular";
+    font-weight: 400;
+    margin: 0px 820px 20px 0px;
+}
+
+.brand-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    border: solid 1px #1B1B1B;
+    border-radius: 6px;
+}
+
+/*case studies page styles*/
+
+.case-studies{
+    width: 100vw;
+    background-color: white;
+    padding: 80px;
+}
+
+.cs-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 570px;
+}
+
+.cs-about h2{
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: "ExtraBold";
+    line-height: 100%;
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.case-studies p{
+    color: #9C9C9C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+}
+
+.cs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    gap: 10px;
+}
+
+.content-box{
+    width: 892px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box img{
+    aspect-ratio: 89 / 60;
+    width: auto;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.csimg1 {
+    object-fit: cover;
+}
+
+.csimg2 {
+    object-fit: cover;
+    object-position: 20% 80%;
+}
+
+.csimg3 {
+    object-fit: cover;
+}
+
+.cs {
+    margin-top: 27px;
+}
+
+.cs h4{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    width: 72px;
+    height: 24px;
+    border: none;
+    border-radius: 60px;
+    text-align: center;
+}
+
+.cs h3{
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    padding: 20px 0px 10px 0px;
+
+}
+
+#cs1 h4{
+    background-color: #FFF6E9;
+    color: #FFA217;
+}
+
+#cs2 h4{
+    background-color: #D0E6FF;
+    color: #000AFF;
+}
+
+#cs3 h4{
+    background-color: #E0FFF8;
+    color:#2AB090;
+}
+
+.cs button{
+    height: 38px;
+    text-align: center;
+    flex-direction: row;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Mono";
+    border-radius: 4px;
+    padding: 10px 24px;
+    border: none;
+    gap: 10px;
+}
+
+.cs button p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 0%;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 10px;
+}
+
+.cs button img{
+    height: 10px;
+    width: 5.89px;
+}
+
+#btn1{
+    background-color: #FFA217;
+}
+
+#btn2{
+    background-color: #000AFF;
+}
+
+#btn3{
+    background-color: #2AB090;
+}
+
+/*testimonials page styles*/
+
+.testimonials {
+    background-color: #080808;
+    padding: 80px;
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.testimonials-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 570px;
+}
+
+.testimonials-about h2{
+    color: white;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: "ExtraBold";
+    line-height: 100%;
+    font-size: 34px;
+    padding-bottom: 10px;
+    letter-spacing: 0%;
+}
+
+.testimonials p{
+    color: #9C9C9C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    min-width: 350px;
+}
+
+.testimonial-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 62px 30px;
+    max-width: 1000px;
+}
+
+.card {
+    width: 445px;
+    height: 212px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+    background-color: #080808;
+    border: 1px solid transparent;
+    border-radius: 12px;
+
+    background:
+    linear-gradient(#080808, #080808) padding-box,
+    linear-gradient(90deg, #484848,#1B1B1B00) border-box;
+
+}
+
+.card h2{
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 100px;
+    color: white;
+    margin: -63px -20px
+}
+
+.card h3{
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 100%;
+    
+}
+
+.card img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+
+.client1img {
+    object-position: 100% 10%;
+}
+
+.client2img {
+    object-position: center top;
+    object-fit: cover;
+}
+
+.client3img {
+    object-position: 100% 10%;
+}
+
+.client4img {
+    object-position: 20% 5%;   
+}
+
+.client-id{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/*Recent Work Styles*/
+
+.Recent-Work {
+    padding: 80px;
+    background-color: white; 
+}
+
+.rw-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.rw-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 570px;
+}
+
+.rw-about h2{
+    color: #090909;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: "ExtraBold";
+    line-height: 100%;
+    font-size: 34px;
+    padding-bottom: 10px;
+    letter-spacing: 0%;
+}
+
+.rw-about p{
+    color: #9C9C9C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+}
+
+.rw-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.rw-card{
+    width: 445px;
+    height: 494px;
+}
+
+.rw-card img{
+    width: 445px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rw-card h3{ 
+    padding-top: 30px;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 24px;
+
+}
+
+.rw-card p{
+    max-width: 421px;
+    color: #9C9C9C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    margin: 20px 0px;
+}
+
+.lm-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 140px;
+    font-family: "IBM Plex Mono";
+    padding: 10px 30px;
+    color: white;
+    font-size: 14px;
+    display: inline;
+    gap: 0px;
+    background-color: #3F8E00;
+    border: none;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.lm-button img{
+    height: 10px;
+    width: 5.89px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+/*contact page styles*/
+
+.contact {
+    width: 100vw;
+    padding: 80px;
+    margin: 0px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px;
+}
+
+.contact-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-about p{
+    color: #9C9C9C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    margin: 0px 0px 30px 0px;
+    max-width: 570px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    min-width: none;
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 30px;
+    gap: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+input {
+    line-height: 25px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F8F8F8;
+    font-family: "IBM Plex Mono";
+}
+
+textarea {
+    line-height: 25px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F8F8F8;
+    font-family: "IBM Plex Mono";
+}
+
+#submit {
+    height: 50px;
+    text-align: center;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: "IBM Plex Mono";
+    background-color: #3F8E00;
+    border: solid 1px color #62BA1B;
+    border-radius: 4px;
+    box-shadow: 0px 0 30px 0 #3F8E0080;
+    color: white;
+    font-weight: 700px;
+    font-style: bold;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+#submit:hover{
+    background-color: #62BA1B;
+    cursor: pointer;
+}
+
+.contact-about h2{
+    color: white;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: "ExtraBold";
+    line-height: 100%;
+    font-size: 34px;
+    padding-bottom: 10px;
+    letter-spacing: 0%;
+} 
+
+footer {
+    background-color: #1B1B1B;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9C9C9C;
+
+}
+
+/*hamburger icon styles*/
+.menu-toggle{
+    color: #9C9C9C;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /*hidden unless mobile */
+}
+
+/*TABLET STYLES*/
+
+@media only screen and (min-width: 600px) and (max-width:899px) {
+/*Reverse Nav*/
+.navbar{
+    flex-direction: row-reverse;
+    padding: 24px 45px 28px 45px;
+}
+
+/*show hamburger icon*/
+.menu-toggle {
+        display: block;
+    }
+
+/*hide menu*/
+.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute; /*position relative to navbar*/
+        top: 70px;
+        background-color: black;
+        left: 0;
+        right: 0;
+        padding: 20px 0px 30px 0px;
+        margin: 0px 20px 0px 20px;
+        border-radius: 15px;
+        z-index:1; /*staying on top of other elements*/
+    }
+
+/*show the menu when class active is there*/
+.menu.active {
+        display: flex;
+    }
+
+/*adjust menu list for mobile*/
+.menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+/*Welcome Page Styles*/  
+
+.main-content {
+    gap: 150px;
+    margin: 20px 10px 20px 30px;
+}
+
+.picture img {
+    height: 250px;
+    width: 250px;
+}
+
+.welcome-message {
+    width: 250px;
+}
+
+.welcome-message h1 {
+    font-size: 30px;
+}
+
+.welcome-message p {
+    font-size: 10px;
+    width: 350px;
+
+}
+
+.welcome-message button{
+    width: 200px;
+    height: 50px;
+
+}
+
+.brand-boxes {
+    gap: 10px;
+}
+
+.box {
+    width: 135px;
+}
+
+.partner-brands h3{
+    color: white;
+    font-size: 14px;
+    font-style: "regular";
+    font-weight: 400;
+    margin: 0px 600px 20px 0px;
+}
+
+
+/*Case Studies Styles*/
+
+.case-studies {
+    padding: 80px 0px 50px 0px;
+}
+
+.cs-container{
+    gap: 0px;
+}
+
+.content-box{
+    scale: .8;
+}
+
+
+
+/*Recent Work Styles*/
+.Recent-Work {
+    padding: 80px 0px 0px 60px;
+}
+
+.rw-container{
+    gap: 0px;
+}
+
+.rw-cards {
+    scale: .75;
+    padding: 0px;
+    margin: 0px;
+}
+
+}
+
+@media only screen and (max-width: 599px) {
+/*Reverse Nav*/
+.navbar{
+    flex-direction: row-reverse;
+    padding: 24px 45px 28px 45px;
+}
+
+
+/*show hamburger icon*/
+.menu-toggle {
+        display: block;
+    }
+
+.menu-toggle:hover {
+    color: rgb(208, 208, 208);
+}
+
+/*hide menu*/
+.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute; /*position relative to navbar*/
+        top: 70px;
+        background-color: black;
+        left: 0;
+        right: 0;
+        padding: 20px 0px 30px 0px;
+        margin: 0px 20px 0px 20px;
+        border-radius: 15px;
+        z-index:1; /*staying on top of other elements*/
+    }
+
+/*show the menu when class active is there*/
+.menu.active {
+        display: flex;
+    }
+
+/*adjust menu list for mobile*/
+.menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+/*Welcome Page Styles*/  
+
+.main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    gap: 0px;
+}
+
+.main-content h1{
+    font-size: 4-px;
+}
+
+.picture img {
+    height: 250px;
+    width: 250px;
+}
+
+.welcome-message {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-message p {
+    font-size: 10px;
+    line-height: 20px;
+    width: 300px;
+}
+
+
+.brand-boxes {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 135px;
+}
+
+.partner-brands h3{
+    color: white;
+    font-size: 14px;
+    font-style: "regular";
+    font-weight: 400;
+    margin: 20px 0px 20px 0px;
+}
+
+.brand-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    border: solid 1px #1B1B1B;
+    border-radius: 6px;
+}
+
+/*Case Studies Styles*/
+.case-studies{
+    padding: 50px 20px 50px 20px;
+}
+
+.content-box{
+    flex-direction: column;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    zoom: 80%;
+}
+
+#content-box2{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cs-container{
+    gap: 20px;
+}
+
+/*Testimonials Styles*/
+.testimonials{
+    padding: 50px 20px 50px 20px;
+}
+
+.card{
+    zoom: 85%;
+}
+
+/*Recent Work Styles*/
+.Recent-Work{
+    padding: 50px 20px 50px 20px;
+}
+
+.rw-container{
+    gap: 0px;
+}
+
+.rw-cards {
+    scale: .75;
+    padding: 0px;
+    margin: -100px -300px;
+    flex-direction: column;
+}
+/*Contact Styles*/
+
+.contact{
+    padding: 50px 20px 50px 20px;
+}
+
+.contact-about p{
+    margin-top: 10px;
+}
+
+
+}
