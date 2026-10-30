@@ -743,6 +743,7 @@ footer {
 .navbar{
     flex-direction: row-reverse;
     padding: 24px 45px 28px 45px;
+    position: fixed;
 }
 
 /*show hamburger icon*/
@@ -859,6 +860,7 @@ footer {
 .navbar{
     flex-direction: row-reverse;
     padding: 24px 45px 28px 45px;
+    position: fixed;
 }
 
 
